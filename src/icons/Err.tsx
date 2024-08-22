@@ -1,6 +1,6 @@
-interface Props extends React.SVGProps<SVGSVGElement> {}
+import { Svg } from "../types";
 
-export default function Err(props: Props) {
+export default function Err(props: Svg) {
 	return (
 		<svg
 			fill="none"
