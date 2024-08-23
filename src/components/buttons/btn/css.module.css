@@ -6,6 +6,7 @@
 	--xl: 32px; /* Extra Large */
 	--xxl: 64px; /* 2x Extra Large */
 	--size-err: 20px;
+
 	position: relative;
 	border: 2px solid transparent;
 	padding: var(--sm) var(--md);
