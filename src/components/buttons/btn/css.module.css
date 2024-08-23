@@ -5,21 +5,20 @@
 	--lg: 16px; /* Large */
 	--xl: 32px; /* Extra Large */
 	--xxl: 64px; /* 2x Extra Large */
-
+	--size-err: 20px;
 	position: relative;
 	border: 2px solid transparent;
 	padding: var(--sm) var(--md);
 	cursor: pointer;
 	min-width: 125px;
+	min-height: 32px;
 	border-radius: var(--md);
-}
-
-.btn__loading {
-	padding-right: calc(var(--md) + 20px);
+	display: grid;
+	place-items: center;
 }
 
 .btn__err {
-	padding-right: calc(var(--md) + 20px);
+	padding-right: calc(var(--size-err) + var(--md));
 }
 
 .btn:disabled {

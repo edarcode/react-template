@@ -1,15 +1,17 @@
-interface Props extends React.SVGProps<SVGSVGElement> {}
+import css from "./css.module.css";
 
-export default function Err(props: Props) {
+export default function Err({ err, ...extraProps }: Props) {
+	if (!err) return null;
 	return (
 		<svg
+			className={css.err}
 			fill="none"
 			stroke="currentColor"
 			viewBox="0 0 24 24"
 			xmlns="http://www.w3.org/2000/svg"
 			width="64"
 			height="64"
-			{...props}
+			{...extraProps}
 		>
 			<path
 				strokeLinecap="round"
@@ -19,4 +21,8 @@ export default function Err(props: Props) {
 			></path>
 		</svg>
 	);
+}
+
+interface Props extends React.SVGProps<SVGSVGElement> {
+	err?: boolean;
 }
