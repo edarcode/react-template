@@ -20,7 +20,7 @@
 	--l-border: #d1d1d6; /* Borde */
 
 	/* Common */
-	--blue: hsl(210, 100%, 40%);
+	--blue: #0066cc;
 	--red: #cd231d;
 	--green: #8c9900;
 }
