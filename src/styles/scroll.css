@@ -8,11 +8,11 @@ body::-webkit-scrollbar {
 
 body::-webkit-scrollbar:vertical {
 	width: 6px;
-	background-color: var(--c-black);
+	background-color: var(--bg-main);
 }
 
 body::-webkit-scrollbar-thumb {
-	background-color: var(--c-green);
+	background-color: var(--red);
 	width: 100%;
 	border-radius: 25px;
 }

@@ -1,20 +1,18 @@
 @import "./styles/reset.css";
+@import "./styles/scroll.css";
+@import "./styles/scales.css";
 @import "./styles/colors.css";
 @import "./styles/shadow.css";
-@import "./styles/radius.css";
 @import "./styles/fonts.css";
-@import "./styles/padding.css";
-@import "./styles/gap.css";
-@import "./styles/scroll.css";
 
 body {
-  background-color: var(--bg-main);
-  color: var(--txt-sec);
+	background-color: var(--bg-main);
+	color: var(--t-sec);
 }
 
 @media (prefers-color-scheme: light) {
-  body {
-    background-color: var(--c-white);
-    color: var(--c-black);
-  }
+	body {
+		background-color: var(--l-bg-main);
+		color: var(--l-t-sec);
+	}
 }
