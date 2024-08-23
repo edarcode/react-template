@@ -1,9 +1,9 @@
 import css from "./css.module.css";
 import Err from "./err/err";
-import { BTN__KIND } from "./kinds";
 import Spinner from "./spinner/spinner";
-import { Props } from "./types";
 import { joinClass } from "./utils/joinClass";
+import { Props } from "./types/types";
+import { BTN_KIND } from "./consts/kinds";
 
 export default function Btn(props: Props) {
 	const {
@@ -19,7 +19,7 @@ export default function Btn(props: Props) {
 	const finalClass = joinClass([
 		css.btn,
 		err && css.btn__err,
-		BTN__KIND[kind ?? "primary"],
+		BTN_KIND[kind ?? "primary"],
 		className
 	]);
 
