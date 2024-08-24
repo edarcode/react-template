@@ -1,5 +1,5 @@
 import css from "./css.module.css";
-import Input from "./input/input";
+import Input from "./Input/Input";
 import { Props } from "./types";
 import { joinClass } from "./utils/joinClass";
 

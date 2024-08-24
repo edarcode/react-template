@@ -1,6 +1,6 @@
 import css from "./css.module.css";
-import Err from "./err/err";
-import Spinner from "./spinner/spinner";
+import Err from "./Err/Err";
+import Spinner from "./Spinner/Spinner";
 import { joinClass } from "./utils/joinClass";
 import { Props } from "./types";
 import { BTN_KIND } from "./consts/kinds";

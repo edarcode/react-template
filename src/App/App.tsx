@@ -1,5 +1,5 @@
-import Btn from "../components/buttons/btn/btn";
-import InputText from "../components/inputs/input-text/inputText";
+import Btn from "../components/buttons/Btn/Btn";
+import InputText from "../components/inputs/InputText/InputText";
 import css from "./css.module.css";
 
 function App() {

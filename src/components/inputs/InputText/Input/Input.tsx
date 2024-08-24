@@ -1,5 +1,5 @@
 import { joinClass } from "../utils/joinClass";
-import State from "../state/state";
+import State from "../State/State";
 import css from "./css.module.css";
 
 export default function Input(props: Props) {
