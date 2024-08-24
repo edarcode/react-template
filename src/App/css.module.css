@@ -1,6 +1,6 @@
 .app {
 	display: grid;
-	justify-content: start;
-	align-content: start;
+	place-items: start;
+	place-content: start;
 	gap: 10px;
 }

@@ -10,7 +10,7 @@
 	display: grid;
 	gap: var(--xs);
 	cursor: text;
-	width: 120px;
+	width: 125px;
 }
 
 .title {
