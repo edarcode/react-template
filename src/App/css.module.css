@@ -3,4 +3,5 @@
 	place-items: start;
 	place-content: start;
 	gap: 10px;
+	padding: 10px;
 }
