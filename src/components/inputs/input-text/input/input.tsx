@@ -1,23 +1,20 @@
 import { joinClass } from "../utils/joinClass";
-import State from "./state/state";
+import State from "../state/state";
 import css from "./css.module.css";
 
-interface Props {
-	err?: string;
-	async?: boolean;
-	loading?: boolean;
-	success?: boolean;
-}
-
 export default function Input(props: Props) {
-	const { err, async, loading, success, ...extraProps } = props;
+	const { async, err, loading, success, ...extraProps } = props;
 
-	const finalClassInput = joinClass([css.input, err && css.input__err]);
+	const finalClassInput = joinClass([
+		css.input,
+		err && css.input__err,
+		async && (err || loading || success) && css.input__state
+	]);
 
 	return (
 		<label className={css.label}>
 			<input
-				placeholder="edarcode"
+				placeholder="⌨️"
 				{...extraProps}
 				type="text"
 				name="email"
@@ -26,4 +23,11 @@ export default function Input(props: Props) {
 			<State async={async} err={err} loading={loading} success={success} />
 		</label>
 	);
+}
+
+interface Props {
+	async?: boolean;
+	err?: string;
+	loading?: boolean;
+	success?: boolean;
 }

@@ -4,19 +4,19 @@ import { Props } from "./types";
 import { joinClass } from "./utils/joinClass";
 
 export default function InputText(props: Props) {
-	const { className, title, err, loading, success, async, ...extraProps } =
+	const { className, title, async, err, loading, success, ...extraProps } =
 		props;
 
-	const finalClassName = joinClass([css.label, className]);
+	const finalClass = joinClass([css.label, className]);
 
 	return (
-		<label className={finalClassName}>
+		<label className={finalClass}>
 			{title && <span className={css.title}>{title}</span>}
 
 			<Input
 				{...extraProps}
-				err={err}
 				async={async}
+				err={err}
 				loading={loading}
 				success={success}
 			/>

@@ -1,6 +1,14 @@
 .label {
+	--xs: 2px; /* Extra Small */
+	--sm: 4px; /* Small */
+	--md: 8px; /* Medium */
+	--lg: 16px; /* Large */
+	--xl: 32px; /* Extra Large */
+	--xxl: 64px; /* 2x Extra Large */
+	--size-err: 20px;
+
 	display: grid;
-	gap: var(--g-sm);
+	gap: var(--xs);
 	cursor: text;
 	width: 300px;
 }
@@ -15,5 +23,5 @@
 }
 
 .err {
-	color: var(--c-red);
+	color: red;
 }

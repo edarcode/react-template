@@ -2,8 +2,8 @@
 
 Dependiendo que params le envie cambiará sus estilos. recibe los sgts params:
 
-- err ?: string
 - async ?: boolean
+- err ?: string
 - loading ?: boolean
 - success ?: boolean
 
@@ -12,4 +12,4 @@ err lo tiene por defecto, y async habilita loading y success. Depende de usted q
 - className ?: string
 - title ?: string
 
-El input orignal está wrapper por un label, pero recibe todas las props posibles para un input de tipo texto y serán agg al mismo. Sin embargo no podrá cambiar el type. className es agg al label y hará un join de su className base a la envia por props.
+El input orignal está wrapper por un label, pero recibe todas las props posibles para un input de tipo texto y serán agg al mismo. Sin embargo no podrá cambiar el type. className es agg al label(wrapper) y hará un join de su className base a la envia por props.

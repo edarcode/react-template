@@ -6,17 +6,17 @@
 	position: absolute;
 	top: 50%;
 	transform: translateY(-50%);
-	right: calc(var(--p-md) / 2);
+	right: calc(var(--md) / 2);
 }
 
 .err {
-	color: var(--c-red);
+	color: red;
 }
 
 .loading {
-	color: var(--c-gray);
+	color: gray;
 }
 
 .success {
-	color: var(--c-green);
+	color: green;
 }

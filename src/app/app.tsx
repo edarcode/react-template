@@ -6,7 +6,7 @@ function App() {
 	return (
 		<div className={css.app}>
 			<Btn>Enviar</Btn>
-			<InputText />
+			<InputText title="Título" />
 		</div>
 	);
 }

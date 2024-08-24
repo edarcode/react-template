@@ -1,25 +1,25 @@
 .label {
+	--size-state: 20px;
+	--p-right: calc(var(--md) + var(--size-state));
 	position: relative;
 }
 
 .input {
 	width: 100%;
-	border: none;
-	outline: transparent;
-	box-shadow: var(--s-sm);
-	border-radius: var(--r-sm);
-	padding: var(--p-sm) var(--p-md);
-	padding-right: calc(var(--p-md) + 20px); /*20px size svg de estado*/
-}
-
-.input:focus {
-	box-shadow: var(--s-md);
+	border: 2px solid transparent;
+	border-radius: var(--sm);
+	padding: var(--sm) var(--md);
+	min-height: 32px;
 }
 
 .input::placeholder {
-	color: var(--c-lightgray);
+	color: lightgray;
 }
 
 .input__err {
-	border: 1px solid var(--c-red);
+	border: 2px solid red;
+}
+
+.input__state {
+	padding-right: var(--p-right);
 }

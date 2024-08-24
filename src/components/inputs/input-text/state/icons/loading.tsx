@@ -1,6 +1,6 @@
-interface Props extends React.SVGProps<SVGSVGElement> {}
+import { SVGProps } from "./types";
 
-export default function Loading(props: Props) {
+export default function Loading(props: SVGProps) {
 	return (
 		<svg
 			fill="none"
