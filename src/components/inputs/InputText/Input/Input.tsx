@@ -1,20 +1,22 @@
 import { joinClass } from "../utils/joinClass";
 import State from "../State/State";
 import css from "./css.module.css";
+import { KINDS } from "./kinds";
 
 export default function Input(props: Props) {
-	const { async, err, loading, success, ...extraProps } = props;
+	const { async, err, loading, success, kind, ...extraProps } = props;
 
 	const finalClassInput = joinClass([
 		css.input,
 		err && css.input__err,
-		async && (err || loading || success) && css.input__state
+		async && (err || loading || success) && css.input__state,
+		css[kind ?? "primary"]
 	]);
 
 	return (
 		<label className={css.label}>
 			<input
-				placeholder="⌨️"
+				placeholder="⌨️ Escribe aquí"
 				{...extraProps}
 				type="text"
 				name="email"
@@ -30,4 +32,5 @@ interface Props {
 	err?: string;
 	loading?: boolean;
 	success?: boolean;
+	kind?: keyof typeof KINDS;
 }

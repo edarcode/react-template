@@ -4,8 +4,16 @@ import { Props } from "./types";
 import { joinClass } from "./utils/joinClass";
 
 export default function InputText(props: Props) {
-	const { className, title, async, err, loading, success, ...extraProps } =
-		props;
+	const {
+		className,
+		title,
+		async,
+		err,
+		loading,
+		success,
+		kind,
+		...extraProps
+	} = props;
 
 	const finalClass = joinClass([css.label, className]);
 
@@ -19,6 +27,7 @@ export default function InputText(props: Props) {
 				err={err}
 				loading={loading}
 				success={success}
+				kind={kind}
 			/>
 
 			{err && <span className={css.err}>{err}</span>}

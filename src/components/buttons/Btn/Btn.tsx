@@ -3,7 +3,7 @@ import Err from "./Err/Err";
 import Spinner from "./Spinner/Spinner";
 import { joinClass } from "./utils/joinClass";
 import { Props } from "./types";
-import { BTN_KIND } from "./consts/kinds";
+import { BTN_KIND } from "./kinds";
 
 export default function Btn(props: Props) {
 	const {
