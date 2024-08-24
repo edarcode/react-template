@@ -19,7 +19,6 @@ export default function Input(props: Props) {
 				placeholder="⌨️ Escribe aquí"
 				{...extraProps}
 				type="text"
-				name="email"
 				className={finalClassInput}
 			></input>
 			<State async={async} err={err} loading={loading} success={success} />
