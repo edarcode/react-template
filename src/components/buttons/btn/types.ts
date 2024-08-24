@@ -1,4 +1,4 @@
-import { BTN_KIND } from "../consts/kinds";
+import { BTN_KIND } from "./consts/kinds";
 
 export interface Props extends React.ButtonHTMLAttributes<HTMLButtonElement> {
 	className?: string;

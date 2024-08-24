@@ -2,7 +2,7 @@ import css from "./css.module.css";
 import Err from "./err/err";
 import Spinner from "./spinner/spinner";
 import { joinClass } from "./utils/joinClass";
-import { Props } from "./types/types";
+import { Props } from "./types";
 import { BTN_KIND } from "./consts/kinds";
 
 export default function Btn(props: Props) {
