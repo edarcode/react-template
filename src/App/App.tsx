@@ -12,8 +12,8 @@ function App() {
 			<InputNumber />
 			<Select
 				opt={[
-					{ value: 0, display: "0" },
-					{ value: 1, display: "1" }
+					{ value: ".js", display: "JavaScript" },
+					{ value: ".rs", display: "Rust" }
 				]}
 			></Select>
 		</div>

@@ -14,14 +14,13 @@
 
 .select {
 	width: 100%;
+	min-height: 32px;
 	appearance: none;
 	border-radius: var(--sm);
 	border: none;
 	outline: transparent;
 	padding: var(--sm) var(--md);
 	padding-right: calc(var(--md) + 20px); /*20px size de .arrow*/
-	background-color: #2c2c2e;
-	color: currentColor;
 }
 
 .select:focus {
@@ -37,4 +36,13 @@
 	height: 20px;
 	transform: translateY(-50%) rotate(90deg);
 	color: #06c;
+}
+
+.primary {
+	background-color: #2c2c2e;
+	color: currentColor;
+}
+
+.secondary {
+	background-color: whitesmoke;
 }
