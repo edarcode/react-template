@@ -1,0 +1,39 @@
+.wrapper_select {
+	--xs: 2px; /* Extra Small */
+	--sm: 4px; /* Small */
+	--md: 8px; /* Medium */
+	--lg: 16px; /* Large */
+	--xl: 32px; /* Extra Large */
+	--xxl: 64px; /* 2x Extra Large */
+
+	position: relative;
+	display: flex;
+	align-items: center;
+	width: 150px;
+}
+
+.select {
+	width: 100%;
+	appearance: none;
+	border-radius: var(--sm);
+	border: none;
+	outline: transparent;
+	padding: var(--sm) var(--md);
+	padding-right: calc(var(--md) + 20px); /*20px size de .arrow*/
+	background-color: #2c2c2e;
+	color: currentColor;
+}
+
+.select:focus {
+	box-shadow: var(--s-md);
+}
+
+.arrow {
+	pointer-events: none;
+	position: absolute;
+	top: 50%;
+	right: calc(var(--md) / 2);
+	width: 20px;
+	transform: translateY(-50%) rotate(90deg);
+	color: #06c;
+}
