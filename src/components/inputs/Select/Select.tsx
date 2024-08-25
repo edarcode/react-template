@@ -7,10 +7,7 @@ export default function Select(props: Props) {
 	const { className, opt, kind, ...extraProps } = props;
 
 	const finalClass = joinClass([css.wrapper_select, className]);
-	const finalClassSelect = joinClass([
-		css.select,
-		kind ? KINDS[kind] : KINDS["primary"]
-	]);
+	const finalClassSelect = joinClass([css.select, KINDS[kind ?? "primary"]]);
 
 	return (
 		<div className={finalClass}>
