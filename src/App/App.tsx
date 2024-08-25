@@ -17,7 +17,6 @@ function App() {
 					{ value: ".rs", display: "Rust" }
 				]}
 			></Select>
-
 			<IconBtn />
 		</div>
 	);
