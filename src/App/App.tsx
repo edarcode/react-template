@@ -9,10 +9,10 @@ function App() {
 	return (
 		<div className={css.app}>
 			<Btn>Enviar</Btn>
-			<InputText />
+			<InputText title="Title" />
 			<InputNumber />
 			<Select
-				title="edar"
+				title="Title"
 				opt={[
 					{ value: ".js", display: "JavaScript" },
 					{ value: ".rs", display: "Rust" }
