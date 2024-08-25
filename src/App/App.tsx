@@ -12,6 +12,7 @@ function App() {
 			<InputText />
 			<InputNumber />
 			<Select
+				title="edar"
 				opt={[
 					{ value: ".js", display: "JavaScript" },
 					{ value: ".rs", display: "Rust" }
