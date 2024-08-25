@@ -1,6 +1,4 @@
 .label {
-	--size-state: 20px;
-	--p-right: calc(var(--md) + var(--size-state));
 	position: relative;
 }
 
@@ -22,7 +20,7 @@
 }
 
 .input__state {
-	padding-right: var(--p-right);
+	padding-right: calc(var(--md) + 20px);
 }
 .primary {
 	background-color: #2c2c2e;

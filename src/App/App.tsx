@@ -8,7 +8,7 @@ function App() {
 	return (
 		<div className={css.app}>
 			<Btn>Enviar</Btn>
-			<InputText />
+			<InputText async loading />
 			<InputNumber />
 			<Select
 				opt={[
