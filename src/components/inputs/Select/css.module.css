@@ -6,6 +6,9 @@
 	--xl: 32px; /* Extra Large */
 	--xxl: 64px; /* 2x Extra Large */
 
+	--s-sm: 0px 0px 8px hsla(0, 0%, 27%, 0.4);
+	--s-md: 0px 0px 14px hsla(0, 0%, 27%, 0.4);
+
 	position: relative;
 	display: flex;
 	align-items: center;
@@ -24,7 +27,7 @@
 }
 
 .select:focus {
-	box-shadow: var(--s-md);
+	box-shadow: var(--s-sm);
 }
 
 .arrow {
