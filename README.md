@@ -1,1 +1,1 @@
-# Template react
+# React template
